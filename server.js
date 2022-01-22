@@ -1,11 +1,8 @@
 const fastify = require('fastify')({logger: true})
-const dotenv = require('dotenv');
+fastify.register(require('./routes/items'))
+const dotenv = require('dotenv')
 
 const PORT = process.env.PORT 
-
-fastify.get('/items', (req,res) => {
-  reply.send({ test: 'Hello, Tester!'})
-})
 
 const start = async() => {
   try {
