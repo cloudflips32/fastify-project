@@ -1,0 +1,3 @@
+### Items to be ignored in version control
+.env
+node_modules
